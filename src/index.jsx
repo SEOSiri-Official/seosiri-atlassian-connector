@@ -1,13 +1,13 @@
-import ForgeUI, { render, AdminPage, IssuePanel, Text, Fragment, Link, Badge, Button } from '@forge/ui';
+import ForgeUI, { render, AdminPage, IssuePanel, Text, Fragment, Link, Button, useState } from '@forge/ui';
 
-// 1. Jira Admin Page Component (Renders inside Jira Settings -> Apps)
+// 1. Clean Jira Admin Control Plane Component
 const AdminComponent = () => {
   return (
     <AdminPage>
       <Text content="## 🌐 SEOSiri Enterprise Control Plane" />
       <Text content="Universal Model Context Protocol (MCP) Master Suite & Cyber-Physical AI Infrastructure." />
 
-      <Text content="### 📊 Live Ecosystem Architecture" />
+      <Text content="### 📊 Live Ecosystem Metrics" />
       <Text content="• **Active Packages:** 17 Published Packages (15 PyPI + 2 NPM)" />
       <Text content="• **Autonomous Tools:** 181 Operational Tools Total" />
       <Text content="• **Edge Gateways:** 12 Live Cloudflare Edge Gateways (*.seosiri.com)" />
@@ -28,15 +28,14 @@ const AdminComponent = () => {
   );
 };
 
-// 2. Jira Issue Panel Component (Renders on every Jira Ticket)
+// 2. Clean Jira Issue Panel Component
 const IssuePanelComponent = () => {
   return (
     <IssuePanel>
       <Text content="## 🌐 SEOSiri MCP Suite" />
-      <Text content="Enterprise AI Control Plane active for this issue." />
-      <Text content="• **181 Autonomous Tools** available across 12 Edge Gateways." />
-      <Text content="🔗 [Open Topology Explorer](https://developers.seosiri.com/)" />
-      <Text content="📖 [Technical Guide](https://www.seosiri.com/2026/07/seosiri-mcp-servers.html)" />
+      <Text content="Enterprise AI Control Plane active for this issue (181 tools available)." />
+      <Text content="• [Open Topology Explorer](https://developers.seosiri.com/)" />
+      <Text content="• [Technical Documentation](https://www.seosiri.com/2026/07/seosiri-mcp-servers.html)" />
     </IssuePanel>
   );
 };
